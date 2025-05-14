@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VisionPro 4K - Fotografía y Filmación de Eventos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">VisionPro 4K</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="form-check form-switch ms-3">
+          <input class="form-check-input" type="checkbox" id="toggleMode"/>
+          <label class="form-check-label" for="toggleMode">🌙</label>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section text-white d-flex align-items-center" id="inicio">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Capturamos tus mejores momentos</h1>
+      <p class="lead">Fotografía y Filmación profesional de eventos en calidad 4K</p>
+      <a href="#contacto" class="btn btn-primary btn-lg mt-3">Solicitá tu presupuesto</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-box p-4 text-center h-100">
+            <img src="https://www.mdpsistemas.com.ar/wp-content/uploads/2021/08/1627570924_IMG_1581060.jpg" width="80" alt="foto">
+            <h4 class="mt-3">Cobertura Fotográfica</h4>
+            <p>Fotografía profesional para eventos sociales, empresariales y culturales.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box p-4 text-center h-100">
+            <img src="https://i.blogs.es/db09dc/4k-camera/1366_2000.jpg" width="80" alt="video">
+            <h4 class="mt-3">Filmación en 4K</h4>
+            <p>Video en ultra alta definición con edición personalizada y entrega digital.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box p-4 text-center h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_Ypw8Pnr0sb-8lFE6QH1E6OXEK5yXNkGhg&s" width="80" alt="drone">
+            <h4 class="mt-3">Tomas Aéreas con Dron</h4>
+            <p>Imágenes y videos impactantes desde el aire, ideales para bodas y eventos masivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería Destacada</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="https://cdn0.matrimonio.com.pe/vendor/6677/3_2/960/jpg/pixi-dsc-0727_11_146677-163349312978127.jpeg" class="img-fluid gallery-img rounded" alt="foto1"/>
+        </div>
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZG9nJTIwNGt8ZW58MHx8MHx8fDA%3D" class="img-fluid gallery-img rounded" alt="foto2"/>
+        </div>
+        <div class="col-md-4">
+          <img src="https://st2.depositphotos.com/2550635/7322/i/450/depositphotos_73228297-stock-photo-hiker-in-black-stand-on.jpg" class="img-fluid gallery-img rounded" alt="foto3"/>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/XHOmBV4js_E" title="Demo Video" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">¿Quiénes somos?</h2>
+      <p class="text-center">Somos un equipo de profesionales apasionados por capturar momentos únicos. Con más de 10 años de experiencia, ofrecemos servicios audiovisuales de primer nivel con tecnología de punta en resolución 4K. Atendemos en todo el país y personalizamos cada proyecto según tus necesidades.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form id="formContacto" class="mx-auto" method="POST" action="guardar_contacto.php" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre"/>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" name="correo" id="correo" placeholder="ejemplo@email.com"/>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Escribinos tu consulta..."></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p>&copy; 2025 VisionPro 4K | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
